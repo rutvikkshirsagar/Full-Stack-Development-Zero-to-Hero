@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #face {
+    width: 200px;
+    height: 200px;
+    background-color: #f9e6c2;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  #eye-left, #eye-right {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  #eye-left {
+    top: 70px;
+    left: 60px;
+  }
+  
+  #eye-right {
+    top: 70px;
+    right: 60px;
+  }
+  
+  #mouth {
+    width: 100px;
+    height: 20px;
+    background-color: #000;
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+  <div id="face">
+    <div id="eye-left"></div>
+    <div id="eye-right"></div>
+    <div id="mouth"></div>
+  </div>
+</body>
+</html>
